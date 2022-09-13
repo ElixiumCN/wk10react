@@ -3,7 +3,8 @@ import "./App.css"
 import SearchIcon from "./search.svg"
 import MovieCard from "./components/MovieCard";
 //TODO import DisplayUsers componet here
-import DisplayUsers, { displayUsers} from "./components/DisplayUsers"
+// import DisplayUsers, { displayUsers} from "./components/DisplayUsers"
+import DisplayUsers from "./components/DisplayUsers"
 import Login from './components/Login'
 
 
