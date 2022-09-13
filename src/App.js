@@ -8,7 +8,10 @@ import DisplayUsers from "./components/DisplayUsers"
 import Login from './components/Login'
 
 
-const API_URL = 'http://omdbapi.com?apikey=7d2e5ef7'
+// d3cb2f8b
+// API Key ^
+
+const API_URL = 'http://omdbapi.com?apikey=d3cb2f8b'
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("")
