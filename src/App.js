@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css"
 import SearchIcon from "./search.svg"
 import MovieCard from "./components/MovieCard";
-//TODO import DisplayUsers componet here
+//TODO import DisplayUsers component here
 // import DisplayUsers, { displayUsers} from "./components/DisplayUsers"
 import DisplayUsers from "./components/DisplayUsers"
 import Login from './components/Login'

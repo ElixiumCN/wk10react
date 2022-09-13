@@ -6,6 +6,8 @@
   box-sizing: border-box;
 } 
 
+
+
 :root {
   --font-roboto: "Roboto Slab", serif;
   --font-raleway: "Raleway", sans-serif;
@@ -142,10 +144,35 @@ h1 {
 }
 .movie:hover div:nth-of-type(3) {
   background-color: transparent;
+  
 }
 .movie:hover div:nth-of-type(1) {
   opacity: 1;
 }
+
+.form {
+  background-color: grey;
+  padding: 20px;
+  align-self: center;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+}
+
+label {
+  /* align-self: center;
+  align-items:center; */
+  justify-content: right;
+  /* text-align: center; */
+}
+input {
+  justify-content: right;
+  /* align-self: center;
+  align-items:center;
+  text-align: center; */
+}
+
+
 @media screen and (max-width: 600px) {
   .app {
     padding: 4rem 2rem;
