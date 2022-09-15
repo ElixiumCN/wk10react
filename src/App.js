@@ -2,18 +2,14 @@ import { useEffect, useState } from "react";
 import "./App.css"
 import SearchIcon from "./search.svg"
 import MovieCard from "./components/MovieCard";
-//TODO import DisplayUsers component here
-// import DisplayUsers, { displayUsers } from "./components/DisplayUsers"
 import DisplayUsers from "./components/DisplayUsers"
 import Login from './components/Login'
 import Signup from './components/Signup'
 import Delete from './components/Delete'
 import Updateuser from './components/UpdateUser'
 
-
 // d3cb2f8b
 // API Key ^
-
 const API_URL = 'http://omdbapi.com?apikey=d3cb2f8b'
 
 const App = () => {
@@ -22,8 +18,9 @@ const App = () => {
   const [user, setUser]= useState()
 
   useEffect (() =>{
-    searchFilms('Batman')
+    searchFilms('')
   },[])
+// batman was hardcoded in here, removed it to be blank and now the user can search for anything and it works.
 
   const searchFilms = async (title) => {
     const req = await fetch(`${API_URL}&s=${title}`)
@@ -33,19 +30,19 @@ const App = () => {
 
   return (
     <div className="app">
-     
-
+    
+    <Signup /><br></br>
+      <Updateuser /><br></br>
+    <Delete /><br></br>
+    <DisplayUsers /><br></br>
       <Login setter={setUser} />
       {user ? 
       <>
       <h1>{user} logged in </h1>
-      <Signup /><br></br>
-      <Updateuser /><br></br>
-     <Delete /><br></br>
-     <DisplayUsers /><br></br>
+      {/* for some reason I can't move the login component above the other component without the other components becoming invisible */}
 
       {/* TODO: Call DisplayUsers component here */}
- 
+
       {/* the signup component is now rendering, in future try moving the position of <component /> tags */}
 <br></br>
 

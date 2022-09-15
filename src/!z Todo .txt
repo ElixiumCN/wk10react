@@ -6,7 +6,9 @@ Please complete Assessment [GH10] 'Full Stack Application' prepared by Alex Ardi
 • [x] Create a REST API that allows for user login and auth.
 
 • [x] Connect front-end and back-end with fetch requests.
-  - With listusers
+  - movie search function works
+  - listusers works
+
 
 [] Stretch Goal - Host application using Heroku + Netlify.
 
