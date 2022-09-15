@@ -3,9 +3,12 @@ import "./App.css"
 import SearchIcon from "./search.svg"
 import MovieCard from "./components/MovieCard";
 //TODO import DisplayUsers component here
-// import DisplayUsers, { displayUsers} from "./components/DisplayUsers"
+// import DisplayUsers, { displayUsers } from "./components/DisplayUsers"
 import DisplayUsers from "./components/DisplayUsers"
 import Login from './components/Login'
+import Signup from './components/Signup'
+import Delete from './components/Delete'
+import Updateuser from './components/UpdateUser'
 
 
 // d3cb2f8b
@@ -30,13 +33,25 @@ const App = () => {
 
   return (
     <div className="app">
+     
 
       <Login setter={setUser} />
       {user ? 
       <>
       <h1>{user} logged in </h1>
-      {/* TODO: Call DisplayUsers componet here */}
-      <DisplayUsers />
+      <Signup /><br></br>
+      <Updateuser /><br></br>
+     <Delete /><br></br>
+     <DisplayUsers /><br></br>
+
+      {/* TODO: Call DisplayUsers component here */}
+ 
+      {/* the signup component is now rendering, in future try moving the position of <component /> tags */}
+<br></br>
+
+
+        {/* <Signup setter={setUser} /> */}
+<br></br>
       </>
       : <h1>user not logged in</h1>}
 

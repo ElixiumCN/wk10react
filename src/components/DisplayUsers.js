@@ -19,9 +19,11 @@ const DisplayUsers = () => {
     },[])
     return (
         <div className='usernames'>
+            
             { usernames?.length > 0
                 ?(
                     <div className="container">
+                        <h1>List of users:</h1>
                     {usernames.map((user) => (
                         <h1>{user}</h1>
                     ))}
