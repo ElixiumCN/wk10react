@@ -2,14 +2,14 @@ import React from 'react'
 import { useState } from "react";
 import { userdelete } from '../utils';
 
-const Delete = ({setter}) => {
+const Delete = (props) => {
     const [username, setUsername] = useState()
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
 
     const submitHandler = async (event) => {
         event.preventDefault()
-        await userdelete(username, email, password, setter)
+        await userdelete(username, email, password, props.setter)
     }
 
     return (

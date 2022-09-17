@@ -2,14 +2,14 @@ import React from 'react'
 import { useState } from "react";
 import { updateuser } from '../utils';
 
-const Updateuser = ({setter}) => {
+const Updateuser = (props) => {
     const [username, setUsername] = useState()
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
 
     const submitHandler = async (event) => {
         event.preventDefault()
-        await updateuser(username, email, password, setter)
+        await updateuser(username, email, password, props.setter)
     }
 
     return (

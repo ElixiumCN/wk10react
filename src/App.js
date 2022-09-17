@@ -31,9 +31,9 @@ const App = () => {
   return (
     <div className="app">
     
-    <Signup /><br></br>
-      <Updateuser /><br></br>
-    <Delete /><br></br>
+    <Signup setter={setUser}/><br></br>
+      <Updateuser setter={setUser}/><br></br>
+    <Delete setter={setUser} /><br></br>
     <DisplayUsers /><br></br>
       <Login setter={setUser} />
       {user ? 
