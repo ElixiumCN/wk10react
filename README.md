@@ -1,3 +1,63 @@
+TODO
+
+Please complete Assessment [GH10] 'Full Stack Application' prepared by Alex Arditti: Task:
+• Create a basic React social media site that mimics Instagram or a film database application .
+
+• [x] Use the OMDb API or similar API to randomly grab images and render them using the map() method.
+
+• [x] Create a REST API that allows for user login and auth.
+
+• [x] Connect front-end and back-end with fetch requests.
+  - movie search function works
+  - listusers works
+
+
+-- Some of the following notes may need updating/deleting:
+
+
+
+[] Stretch Goal - Host application using Heroku + Netlify.
+
+  React app
+
+Create account [x] 
+  partially done - the signup.js form creates a new account the in database!
+Login html response [x] working "user" logged in
+Delete account []
+List users [x] 
+  partially done - needs styling and conditional rendering via a button.
+
+Conditional rendering?
+
+Sign up form.
+
+
+{/* Q 1: Why isn't my signup component rendering?
+
+Q 2: Is my signup form working with the database once it's rendered? If not how do I fix it?
+Q 3: Code example for conditional rendering e.g. sign up form not
+visible until user presses a signup button  */}
+
+utils/index.js - these are the functions e.g. signup that interact with the REST API server.
+
+Credentials
+
+{
+  "username": "test3",
+  "email": "tes2t@email.com",
+  "password": "Test"
+}
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
